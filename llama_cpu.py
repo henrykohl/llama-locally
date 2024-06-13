@@ -1,4 +1,4 @@
-from langchain.llms import LlamaCpp
+from langchain_community.llms import LlamaCpp # 取代 langchain.llms
 from langchain import PromptTemplate, LLMChain
 from langchain.callbacks.manager import CallbackManager
 from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
