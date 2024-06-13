@@ -32,4 +32,4 @@ model_prompt: str = """
 Question: What is the largest country on Earth?
 """
 
-response: str = llm(model_prompt)
+response: str = llm.invoke(model_prompt) # 取代 llm(model_prompt)
