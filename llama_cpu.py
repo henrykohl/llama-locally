@@ -1,7 +1,10 @@
 from langchain_community.llms import LlamaCpp # 取代 langchain.llms
-from langchain import PromptTemplate, LLMChain
-from langchain.callbacks.manager import CallbackManager
-from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
+# from langchain import PromptTemplate, LLMChain # 被取代
+# from langchain.callbacks.manager import CallbackManager # 被取代
+# from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler # 被取代
+from langchain.chains import LLMChain
+from langchain_core.callbacks import CallbackManager, StreamingStdOutCallbackHandler
+from langchain_core.prompts import PromptTemplate
 
 MODEL_PATH = "./llama-2-7b-chat.ggmlv3.q4_0.bin"
 
@@ -29,4 +32,4 @@ model_prompt: str = """
 Question: What is the largest country on Earth?
 """
 
-response: str = llm(model_prompt)
+response: str = llm.invoke(model_prompt) # 取代 llm(model_prompt)

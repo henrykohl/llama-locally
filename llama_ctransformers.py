@@ -1,7 +1,8 @@
-from langchain.llms import LlamaCpp
-from langchain.llms import CTransformers
-from langchain.callbacks.manager import CallbackManager
-from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
+from langchain_community.llms import LlamaCpp # 取代 langchain.llms
+from langchain_community.llms import CTransformers
+# from langchain.callbacks.manager import CallbackManager
+# from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
+from langchain_core.callbacks import CallbackManager, StreamingStdOutCallbackHandler
 
 MODEL_PATH = "./llama-2-7b-chat.ggmlv3.q4_0.bin"
 
