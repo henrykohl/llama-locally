@@ -27,6 +27,13 @@
 
 * 另外兩個檔案必需要用 GPU 執行，相關 Deprecated 的方法，並沒有被修改
 
+## 補充
+* `llama_cpp_python-0.2.77-cp38-cp38-win_amd64.whl` 在 Windows 執行時，可能會用到，但在`Colab`或是`Codespace`(github.dev)不需要
+
+* 更多關於 GGML 模型加載細節與問題，參考[the Ipynb in GitHub](https://github.com/henrykohl/Machine-Learning-demo-repo/tree/master/NaturalLanguage/LLaMALocally)
+
+* [the reference](https://python.langchain.com.cn/docs/use_cases/chatbots/voice_assistant) used in `llama_llchain.py`
+
 
 
 
